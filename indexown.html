@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <style>
+      body {
+        background-color: #aea5df;
+        padding: 100px;
+        padding-top: 20px;
+        font-size: 25px;
+      }
+      input {
+        padding: 4px;
+      }
+      input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #c9c1f6;
+      }
+      .profile-container {
+        max-width: 100%;
+        margin: 0%;
+        background-color: rgb(239, 207, 231);
+        padding: 100px;
+        padding-top: 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-container">
+      <h1>Profile</h1>
+      <form>
+        <label for="fname">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required />
+      </form>
+      <br />
+      <form>
+        <label for="fname">Last Name:</label>
+        <input type="text" id="firstName" name="firstName" required />
+      </form>
+      <br />
+      <form>
+        <label for="fname">DOB :</label>
+        <input type="date" id="firstName" name="firstName" required />
+      </form>
+      <br />
+      <form>
+        <label for="fname">Mobile:</label>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          maxlength="10"
+          required
+        />
+      </form>
+      <br />
+      <form>
+        <label for="fname">Email:</label>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          pattern=".+@example\.com"
+          required
+        />
+        <br />
+      </form>
+      <div>
+        <h3>Address</h3>
+        <form>
+          <label for="fname">Country:</label>
+          <!--  <input type="text" id="firstName" name="firstName" required />  -->
+          <select name="Country">
+            <option value="">--Please choose an option--</option>
+            <option value="Australia">Australia</option>
+            <option value="Belgium">Belgium</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+          </select>
+        </form>
+        <br />
+        <form>
+          <label for="fname">State:</label>
+          <!-- <input type="text" id="firstName" name="firstName" required /> -->
+          <select name="State">
+            <option value="">--Please choose an option--</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Andrapradesh">Andrapradesh</option>
+          </select>
+        </form>
+        <br />
+        <form>
+          <label for="fname">City:</label>
+          <select name="City">
+            <option value="">--Please choose an option--</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Secunderabad">Secunderabad</option>
+          </select>
+        </form>
+        <br />
+        <form>
+          <label for="fname">Pin Code:</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            maxlength="6"
+            required
+          />
+        </form>
+        <br />
+        <input size="200px" type="submit" value="Submit" />
+      </div>
+    </div>
+  </body>
+</html>

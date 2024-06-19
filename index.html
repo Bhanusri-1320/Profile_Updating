@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <style>
+      /* Optional CSS for styling */
+      .address-form {
+        width: 60%;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .address-form label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      .address-form input[type="text"] {
+        width: calc(100% - 10px);
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      .address-form input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Profile</h1>
+    <form>
+      <label for="textbox">First Name:</label>
+      <input type="text" id="textbox" name="name" />
+    </form>
+    <br />
+    <form>
+      <label for="textbox">Last Name:</label>
+      <input type="text" id="textbox" name="name" />
+    </form>
+    <br />
+    <form>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" />
+    </form>
+    <div class="address-form">
+      <h3>Enter Your Address</h3>
+      <form>
+        <label for="country">Country :</label>
+        <input type="text" id="country" name="country" required />
+        <p></p>
+        <label for="state">State :</label>
+        <input type="text" id="state" name="state" required />
+        <p></p>
+        <label for="city">City : </label>
+        <input type="text" id="city" name="city" required />
+        <p></p>
+        <label for="pincode">Pin Code :</label>
+        <input type="text" id="pincode" name="pincode" required />
+        <p></p>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
